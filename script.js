@@ -10,7 +10,7 @@ document.getElementById('quiz-form').addEventListener('submit', async (e) => {
     language_preference: form.language_preference.value
   };
 
-  const res = await fetch("https://your-backend-url/recommend", {
+  const res = await fetch("https://backend-00cc.onrender.com/recommend", {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
