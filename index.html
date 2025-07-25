@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Matcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-6">
+    <h1 class="text-3xl font-bold mb-4 text-center">🎬 Find Your Perfect Movie</h1>
+
+    <form id="quiz-form" class="space-y-4">
+      <input class="w-full border p-2 rounded" name="favorite_genres" placeholder="Favorite genres (e.g., Action, Comedy)">
+      <input class="w-full border p-2 rounded" name="favorite_movie" placeholder="A movie you loved">
+      <input class="w-full border p-2 rounded" name="preferred_decade" placeholder="Preferred decade (e.g., 2010s)">
+      <input class="w-full border p-2 rounded" name="watch_mood" placeholder="Mood while watching?">
+      <input class="w-full border p-2 rounded" name="language_preference" placeholder="Preferred language">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded" type="submit">Get Recommendations</button>
+    </form>
+
+    <div id="results" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
